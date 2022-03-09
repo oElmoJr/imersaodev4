@@ -1,3 +1,71 @@
-<h1>Essa parte ainda não existe</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de distancias</title>
 
-<a href="https://oelmojr.github.io/imersaodev4/calculadora/" >Voltar</a>
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://kit.fontawesome.com/067f1ddc73.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <a href="../">
+          <h1>CALCULADORA</h1>
+        </a>
+        <div>
+          <a class="menu-btn" href="../media/">Média</a>
+          <a class="menu-btn" href="../temperatura/">Temperatura</a>
+          <a class="menu-btn" href="../moeda/">Moeda</a>
+          <a class="menu-btn on" href="">Distância</a>
+        </div>
+
+        <img
+          src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg"
+          class="page-logo"
+          alt=""
+        />
+      </aside>
+      <main>
+        <a href="https://alura.com.br/" target="_blank">
+          <img
+            src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+            alt=""
+            class="alura-logo"
+          />
+        </a>
+        <h1 class="page-title">Conversor de Distancias</h1>
+        <span id="resultado"></span>
+
+        <div class="calc-container">
+          <div class="input-container">
+            <input id="valor" type="text" />
+            <select id="valor1" type="text">
+              <option value="Kl">Quilometro</option>
+              <option value="Al">Anos luz</option>
+              <option value="M">Metros</option>
+              <option value="mm">Milimetros</option>
+              <option value="Cm">Centimetros</option>
+            </select>
+            <i class="far fa-arrow-alt-circle-right"></i>
+            <select id="valor2" type="text">
+              <option value="Kl">Quilometro</option>
+              <option value="Al">Anos luz</option>
+              <option value="M">Metros</option>
+              <option value="mm">Milimetros</option>
+              <option value="Cm">Centimetros</option>
+            </select>
+          </div>
+          <button onclick="converter()" class="btn">Converter</button>
+        </div>
+      </main>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

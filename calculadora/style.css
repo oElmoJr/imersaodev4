@@ -6,10 +6,6 @@
   text-decoration: none;
 }
 
-body {
-  height: 100vh;
-}
-
 .container {
   display: flex;
   flex-direction: row;
@@ -20,19 +16,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   background-color: #cd5334;
   color: #2e282a;
   box-shadow: 0 0 1em #2e282a;
 
-  padding: 50px;
+  padding: 40px 50px;
   width: 200px;
 }
 
 aside h1 {
   font-size: 30px;
   color: #edb88b;
-  margin-bottom: 50px;
 }
 
 .menu-btn {
@@ -48,7 +44,8 @@ aside h1 {
 
   height: 50px;
   width: 200px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .menu-btn:hover {
@@ -65,8 +62,7 @@ aside h1 {
 }
 
 .page-logo {
-  margin-top: auto;
-  width: 200px;
+  width: 150px;
 }
 
 .container main {
@@ -86,7 +82,7 @@ p {
   margin-bottom: 40px;
 }
 
-i {
+.calc-container i {
   font-size: 30px;
   margin: auto 15px;
 }
@@ -141,9 +137,9 @@ select {
   border: none;
   border-radius: 5px;
 
-  padding: 0 15px;
+  padding: 0 5px;
   margin: 5px;
-  width: 100px;
+  width: 130px;
   height: 30px;
 
   box-sizing: border-box;
@@ -151,12 +147,13 @@ select {
 
 .social-links {
   display: flex;
+  justify-content: space-around;
+  width: 150px;
 }
 
-.social-links a {
+.social-links i {
   color: #2e282a;
   width: 30px;
-  margin: 30px 10px;
 }
 
 .social-links i:hover {
