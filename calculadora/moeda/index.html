@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora</title>
+    <title>Conversor de moedas</title>
 
     <link rel="stylesheet" href="../style.css" />
     <script
@@ -19,8 +19,8 @@
           <h1>CALCULADORA</h1>
         </a>
         <a class="menu-btn" href="../media/">Média</a>
-        <a class="menu-btn on" href="">Temperatura</a>
-        <a class="menu-btn" href="../moeda/">Moeda</a>
+        <a class="menu-btn" href="../temperatura/">Temperatura</a>
+        <a class="menu-btn on" href="">Moeda</a>
         <a class="menu-btn" href="../distancia/">Distância</a>
 
         <img
@@ -37,23 +37,26 @@
             class="alura-logo"
           />
         </a>
-        <h1 class="page-title">Calculadora de Temperatura</h1>
-
+        <h1 class="page-title">Conversor de moedas</h1>
         <span id="resultado"></span>
 
         <div class="calc-container">
           <div class="input-container">
             <input id="valor" type="text" />
             <select id="valor1" type="text">
-              <option value="Celcius">Celcius</option>
-              <option value="Farenheit">Farenheit</option>
-              <option value="Kelvin">Kelvin</option>
+              <option value="BRL">Real</option>
+              <option value="USD">Dólar americano</option>
+              <option value="EUR">Euro</option>
+              <option value="KRW">Won sul-coreano</option>
+              <option value="JPY">Iene japonês</option>
             </select>
             <i class="far fa-arrow-alt-circle-right"></i>
             <select id="valor2" type="text">
-              <option value="Farenheit">Farenheit</option>
-              <option value="Celcius">Celcius</option>
-              <option value="Kelvin">Kelvin</option>
+              <option value="BRL">Real</option>
+              <option value="USD">Dólar americano</option>
+              <option value="EUR">Euro</option>
+              <option value="KRW">Won sul-coreano</option>
+              <option value="JPY">Iene japonês</option>
             </select>
           </div>
           <button onclick="converter()" class="btn">Converter</button>
