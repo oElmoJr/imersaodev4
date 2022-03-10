@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Mentalista</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="window">
+      <header>
+        <h1 class="header-title">Mentalista</h1>
+        <p class="header-btn">x</p>
+      </header>
+      <main>
+        <div class="title-container">
+          <h2 class="title">Adivinhe o número de 0 a 10.</h2>
+          <p class="subtitle">
+            Você tem <span id="tentativas"></span> tentativas.
+          </p>
+          <p id="quente-frio"></p>
+        </div>
+        <span class="mensagem"></span>
+        <div>
+          <input id="numeroPlayer" type="number" min="0" max="10" />
+          <button onclick="chutar()">Chutar</button>
+        </div>
+        <div id="popup" class="popup">
+          <!-- <div class="window">
+            <header>
+              <h1 class="header-title">Alerta</h1>
+              <p class="header-btn" onclick="fechar()">x</p>
+            </header>
+            <div class="container">
+              <div class="title-container">
+                <p id="mensagem-final" class="title">
+                  Acabaram suas temtativas.
+                </p>
+                <p class="subtitle">tentar novamente?</p>
+              </div>
+              <div class="popup-btn-container">
+                <a class="btn" href="">Sim</a
+                ><button onClick="fechar()">Não</button>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/oElmoJr/imersaodev4"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

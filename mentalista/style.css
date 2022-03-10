@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font-family: "VT323", monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: no-repeat bottom;
+  background-size: cover;
+  background-image: url("https://wink.messengergeek.com/uploads/default/original/2X/e/ec8b5261612ed93345d7f5d9f48bc2117a6ac409.png");
+
+  height: 100vh;
+}
+
+.window {
+  position: absolute;
+  background-color: #c1bfc2;
+  border: 3px solid #d1d0d1;
+  border-style: inset;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.479);
+
+  left: 400px;
+
+  height: 200px;
+  width: 400px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #0a0085;
+  color: #ebebeb;
+  border-bottom: 1px solid black;
+
+  height: 15px;
+  padding: 2px 5px;
+}
+
+.header-title {
+  font-size: 18px;
+}
+
+.header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid #d1d0d1;
+  border-style: inset;
+
+  background-color: #c1bfc2;
+  color: #000;
+
+  cursor: pointer;
+  height: 8px;
+  width: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 170px;
+}
+
+.title-container {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+
+.subtitle {
+  font-size: 20px;
+}
+
+input {
+  border: 3px solid #d1d0d1;
+  border-style: inset;
+
+  width: 200px;
+  height: 20px;
+  padding-left: 5px;
+}
+
+button {
+  background-color: #c1bfc2;
+  border: 3px solid #d1d0d1;
+  border-style: inset;
+
+  cursor: pointer;
+
+  width: 80px;
+  height: 25px;
+}
+
+.popup .window {
+  left: 20px;
+  top: -40px;
+  height: 150px;
+}
+
+.popup .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+}
+
+.popup button {
+  margin: 0 5px;
+}
+
+.popup-btn-container {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #c1bfc2;
+  color: #000;
+  border: 3px solid #d1d0d1;
+  border-style: inset;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+
+  width: 80px;
+  height: 19px;
+}
+
+.popup-btn-container input {
+  margin: 0 5px;
+}
