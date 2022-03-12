@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aluraflix</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header>
+      <div class="logo-container">
+        <h1>ALURAFLIX</h1>
+      </div>
+      <form id="form" class="seach">
+        <input
+          type="text"
+          placeholder="search"
+          class="search-input"
+          id="search"
+        />
+      </form>
+    </header>
+
+    <main>
+      <section class="my-list">
+        <h2>Minha Lista</h2>
+        <div class="swiper-container">
+          <div id="items">
+            <div class="movie-card item">
+              <img
+                src="https://image.tmdb.org/t/p/w500//4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
+                alt=""
+              />
+              <div class="overview">
+                <h3 class="movie-title">Encanto</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular-container" class="popular-list">
+        <h2>Filmes</h2>
+        <div class="swiper-container">
+          <div id="items2"></div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

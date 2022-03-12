@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  background-color: rgb(24, 24, 24);
+  overflow-x: hidden;
+
+  height: 100vh;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: none;
+  background-color: rgb(24, 24, 24);
+
+  height: 50px;
+  padding: 0 25px;
+}
+
+h1 {
+  font-size: 30px;
+  color: brown;
+}
+
+.search-input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(85, 20, 20);
+  color: #fff;
+
+  height: 30px;
+  width: 200px;
+  padding-left: 5px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  /* align-items: center; */
+  height: 95%;
+
+  color: #fff;
+}
+
+section h2 {
+  font-size: 16px;
+  margin: 10px 20px 5px;
+}
+
+.item {
+  position: relative;
+  color: lightgray;
+  border-radius: 3px;
+  margin: 0 10px 0 20px;
+}
+
+.btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: #fff;
+  background: none;
+  border: none;
+  line-height: 20px;
+  font-weight: bolder;
+  font-size: 50px;
+  pointer-events: all;
+  border-radius: 20px;
+  cursor: pointer;
+
+  text-shadow: 5px 5px 5px black;
+}
+
+.btn:hover {
+  color: brown;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-info .score {
+  background-color: rgb(58, 58, 58);
+  color: lightgray;
+
+  font-weight: bold;
+  line-height: 20px;
+  border-radius: 3px;
+
+  height: 20px;
+  padding: 0 3px;
+}
+
+.movie-title {
+  display: flex;
+
+  width: 125px;
+  font-size: 13px;
+}
+
+.swiper-container {
+  width: 100vw;
+}
+
+#items,
+#items2 {
+  display: flex;
+  overflow: hidden;
+
+  scroll-behavior: smooth;
+}
+
+.item {
+  flex: none;
+  pointer-events: none;
+}
+
+img {
+  width: 125px;
+  height: 195x;
+}
