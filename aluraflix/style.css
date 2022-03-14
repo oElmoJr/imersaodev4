@@ -34,6 +34,17 @@ header {
 h1 {
   font-size: 30px;
   color: brown;
+  cursor: pointer;
+}
+
+#form {
+  display: flex;
+  align-items: center;
+}
+
+#form p {
+  color: brown;
+  font-weight: bold;
 }
 
 .search-input {
@@ -44,6 +55,7 @@ h1 {
 
   height: 30px;
   width: 200px;
+  margin-left: 5px;
   padding-left: 5px;
 }
 
@@ -121,8 +133,8 @@ section h2 {
   width: 100vw;
 }
 
-#items,
-#items2 {
+#itens,
+#itens2 {
   display: flex;
   overflow: hidden;
 

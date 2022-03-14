@@ -11,9 +11,10 @@
   <body id="body">
     <header>
       <div class="logo-container">
-        <h1>ALURAFLIX</h1>
+        <h1 onclick="popular()">ALURAFLIX</h1>
       </div>
       <form id="form" class="seach">
+        <p class="pesquisar">Pesquisar</p>
         <input
           type="text"
           placeholder="search"
@@ -25,9 +26,9 @@
 
     <main>
       <section class="my-list">
-        <h2>Minha Lista</h2>
+        <h2 id="minhaLista">Lista do Elmo</h2>
         <div class="swiper-container">
-          <div id="items">
+          <div id="itens">
             <div class="movie-card item">
               <img
                 src="https://image.tmdb.org/t/p/w500//4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
@@ -37,6 +38,33 @@
                 <h3 class="movie-title">Encanto</h3>
               </div>
             </div>
+            <div class="movie-card item">
+              <img
+                src="https://image.tmdb.org/t/p/w500//725WE0Qb1BbUF7aGvjiQqzzffpg.jpg"
+                alt=""
+              />
+              <div class="overview">
+                <h3 class="movie-title">Red: Crescer é Uma Fera</h3>
+              </div>
+            </div>
+            <div class="movie-card item">
+              <img
+                src="https://image.tmdb.org/t/p/w500//1pcXYNwR1RYjbQUDNEdGAEfxABq.jpg"
+                alt=""
+              />
+              <div class="overview">
+                <h3 class="movie-title">A Escolha Perfeita</h3>
+              </div>
+            </div>
+            <div class="movie-card item">
+              <img
+                src="https://image.tmdb.org/t/p/w500//xSmtEs771Czn1cU3PwgYqDuwCgA.jpg"
+                alt=""
+              />
+              <div class="overview">
+                <h3 class="movie-title">Steven Universo - O Filme</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -44,7 +72,7 @@
       <section id="popular-container" class="popular-list">
         <h2>Filmes</h2>
         <div class="swiper-container">
-          <div id="items2"></div>
+          <div id="itens2"></div>
         </div>
       </section>
     </main>

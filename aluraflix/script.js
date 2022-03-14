@@ -8,13 +8,18 @@ const API_URL =
 const IMG_URL = "https://image.tmdb.org/t/p/w500/";
 const SEARCH_URL = BASE_URL + "/search/movie?" + API_KEY + "&language=pt-BR";
 
-const popularContainer = document.getElementById("items2");
-const myListContainer = document.getElementById("items");
+const popularContainer = document.getElementById("itens2");
+const myListContainer = document.getElementById("itens");
 
 const search = document.getElementById("search");
 const form = document.querySelector("#form");
 
 let minhaListaFilmes = [];
+let minhaListaFilmesT = [];
+
+function popular() {
+  getMovies(API_URL);
+}
 
 getMovies(API_URL);
 
@@ -33,41 +38,48 @@ function showMovies(data) {
     const { title, poster_path } = movie;
     const movieEl = document.createElement("div");
     movieEl.classList.add("item");
+
+    let newTitle = title.replace(/'/i, "`");
+
     movieEl.innerHTML = `
     <img src="${IMG_URL + poster_path}" alt="" />
     <div class="overview">
-      <h3 class="movie-title">${title}</h3>
+      <h3 class="movie-title">${newTitle}</h3>
     </div>
-    <button class="btn" onclick='adicionar("${title}", "${poster_path}")'>+</button>
+    <button class="btn" onclick='adicionar("${newTitle}", "${poster_path}")'>+</button>
     `;
 
     popularContainer.appendChild(movieEl);
   });
 }
 
-function myList(filme) {
+function showMyList() {
   myListContainer.innerHTML = "";
 
-  if (minhaListaFilmes.indexOf(filme) === -1) {
-    minhaListaFilmes.push(filme);
-  }
-
-  console.log(minhaListaFilmes);
-  console.log(filme);
-
+  let i = 0;
   minhaListaFilmes.forEach((filme) => {
     const { titulo, img } = filme;
     const filmeEl = document.createElement("div");
     filmeEl.classList.add("item");
+    document.getElementById("minhaLista").innerHTML = "Minha Lista";
+
     filmeEl.innerHTML = `
     <img src="${img}" alt="" />
     <div class="overview">
       <h3 class="movie-title">${titulo}</h3>
     </div>
+    <button class="btn" onclick='remover(${i})'>-</button>
     `;
 
     myListContainer.appendChild(filmeEl);
+    i++;
   });
+}
+
+function myList(filme) {
+  myListContainer.innerHTML = "";
+  minhaListaFilmes.push(filme);
+  showMyList();
 }
 
 form.addEventListener("submit", (e) => {
@@ -85,10 +97,20 @@ function adicionar(title, poster) {
     img: IMG_URL + poster,
   };
 
-  myList(filme);
+  if (minhaListaFilmesT.includes(filme.titulo)) {
+  } else {
+    minhaListaFilmesT.push(filme.titulo);
+    myList(filme);
+  }
 }
 
-document.querySelector("#items").addEventListener("wheel", (e) => {
+function remover(i) {
+  minhaListaFilmes.splice(i, 1);
+  minhaListaFilmesT.splice(i, 1);
+  showMyList();
+}
+
+document.querySelector("#itens").addEventListener("wheel", (e) => {
   if (e.deltaY > 0) {
     e.target.scrollBy(300, 0);
   } else {
@@ -96,7 +118,7 @@ document.querySelector("#items").addEventListener("wheel", (e) => {
   }
 });
 
-document.querySelector("#items2").addEventListener("wheel", (e) => {
+document.querySelector("#itens2").addEventListener("wheel", (e) => {
   if (e.deltaY > 0) {
     e.target.scrollBy(300, 0);
   } else {
