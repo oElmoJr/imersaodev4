@@ -69,7 +69,7 @@ function novojogador() {
 
   if (nomeplayer) {
     if (playersName.includes(nomeplayer)) {
-      msg.innerHTML = "Este player já foi adicionado";
+      msg.innerHTML = "Este player já existe";
       setTimeout(() => {
         msg.innerHTML = "";
       }, 3000);
@@ -89,7 +89,7 @@ function novojogador() {
     }
   } else {
     window.time;
-    msg.innerHTML = "Escreva o nome do player";
+    msg.innerHTML = "Escreva um nome";
     setTimeout(() => {
       msg.innerHTML = "";
     }, 3000);
