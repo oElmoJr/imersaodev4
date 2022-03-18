@@ -41,7 +41,7 @@ function adicionarVitoria(i) {
   adicionarDerrota(i);
 }
 
-function adicionarEmpate(i) {
+function adicionarEmpate() {
   for (var i = 0; i < listaJogadores.length; i++) {
     var jogador = listaJogadores[i];
     jogador.empates++;
