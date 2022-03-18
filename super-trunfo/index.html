@@ -4,9 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Trunfo</title>
+    <title>SUPER TRUNFO</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>🚧 Em desenvolvimento</h1>
+    <header>
+      <h1 class="page-title">Super Trunfo - Steven Universe</h1>
+    </header>
+    <div class="container">
+      <div class="wrapper">
+        <div>
+          <div id="carta-jogador">
+            <h3></h3>
+          </div>
+        </div>
+        <div class="middle-container" id="middle-container">
+          <button onclick="sortearCarta()" id="btnSortear">
+            Sortear carta
+          </button>
+        </div>
+        <div>
+          <div id="carta-maquina" class="carta"></div>
+        </div>
+      </div>
+
+      <audio id="myAudio" autoplay="autoplay">
+        <source src="assets/su-music.m4a" />
+      </audio>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
