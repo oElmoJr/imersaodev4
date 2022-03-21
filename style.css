@@ -1,180 +1,160 @@
 * {
-  text-decoration: none;
-  /* color: #000; */
-}
+  margin: 0;
+  padding: 0;
 
-body {
-  background: gold;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
-.container {
-  width: 50%;
-  background-color: white;
-  border-radius: 20px;
-  margin: 50px auto 20px;
-  padding: 30px;
-  min-width: 510px;
-  box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+body {
+  background-color: #0e0e0e;
+  height: 100vh;
+  background-image: url(assets/img/bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+  height: 150px;
+}
+
+.bg-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("https://wallpaperaccess.com/full/1957175.jpg");
+  background-position: center;
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.bg-container {
+  height: 100%;
+  width: 100%;
+
+  /* border-bottom: 2px solid #fff; */
 }
 
 .title-box {
-  width: 275px;
-  margin-right: auto;
-}
-
-header h1 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-header p {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-.hashtag {
-  color: rgb(116, 115, 115);
-  font-size: 13px;
+  position: absolute;
+  top: 50px;
 }
 
 .perfil-foto {
-  border-radius: 100%;
-  height: 100px;
-  width: 100px;
-  margin-right: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-.icons {
-  display: flex;
-
-  justify-content: space-evenly;
-  align-items: center;
-
+  height: 150px;
   width: 150px;
-  margin-left: 10px;
+  border-radius: 150px;
+  border: 3px solid #fff;
 }
 
-@media only screen and (max-width: 1150px) {
-  .icons {
-    flex-direction: column;
-  }
-
-  .title-box p {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.title-box-text {
+  margin: 5px 0;
 }
 
-.icons i {
-  margin: 0 0px 5px 20px;
-  color: rgb(75, 75, 75);
-}
-
-.main-box {
-  background-color: rgb(255, 250, 217);
-  border-radius: 15px;
-  padding: 20px;
-  margin-top: 20px;
-  padding-bottom: 40px;
-}
-
-.main-box h2 {
-  text-align: center;
-  margin: 0 auto 40px;
-  display: block;
-}
-
-.main-box a {
-  padding: 10px 10px 10px 5px;
-}
-
-.main-box a:hover {
-  background-color: rgba(207, 207, 207, 0.336);
-}
-
-ul {
-  padding-left: 0;
-  list-style: none;
+.hashtag {
+  color: rgb(158, 158, 158);
+  text-decoration: none;
 }
 
 a {
-  color: #000;
+  color: inherit;
+  text-decoration: none;
 }
 
-li {
-  margin: 10px;
-}
-
-.icons a:hover {
-  color: goldenrod;
-}
-
-.tema {
-  width: 50%;
-  min-width: 510px;
-  margin: 0 auto;
-}
-
-.theme-btn {
-  background: none;
-  padding: 8px;
-  border: 0;
-  border-radius: 100%;
-}
-
-.theme-btn {
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  padding: 6px;
-  background-color: #fff;
-  color: #000;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 170px auto 0 auto;
+  width: 65%;
 }
 
-.theme-btn:hover {
-  cursor: pointer;
-  background-color: #000;
+.project {
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+
+  border-radius: 10px;
+  width: 400px;
+  height: 320px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+
+.project-img {
+  border-radius: 10px 10px 0 0;
+  width: 400px;
+}
+
+.project h2 {
+  font-size: 20px;
+}
+
+.project-description {
+  width: 400px;
+  height: 122px;
+  padding: 10px;
+}
+
+.project-description p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+  text-align: center;
+
+  background-color: rgb(75, 75, 75);
+  border-radius: 4px;
+  font-size: 15px;
+
+  width: 185px;
+  margin-top: 25px;
+  padding: 5px;
+}
+
+.links a:hover {
+  background-color: gray;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  margin-top: 50px;
+  padding: 10px;
+
   color: #fff;
 }
 
-.dark {
-  background-color: rgb(184, 119, 0);
+footer p {
+  color: gray;
+  margin: 10px;
 }
 
-.dark .container {
-  background-color: rgb(29, 29, 29);
-  color: rgb(182, 182, 182);
+footer a {
+  margin: 0 10px;
 }
 
-.dark .main-box {
-  background-color: rgb(48, 48, 48);
-}
+button {
+  background: none;
+  color: #fff;
 
-.dark h1,
-.dark p,
-.dark h2,
-.dark a,
-.dark .icons {
-  color: rgb(182, 182, 182);
-}
-
-.dark .icons i:hover {
-  color: orange;
-}
-
-.dark .theme-btn {
-  background-color: #000;
-  color: rgb(182, 182, 182);
-}
-
-.dark .theme-btn:hover {
-  background-color: #fff;
-  color: #000;
+  border: none;
+  cursor: pointer;
 }
